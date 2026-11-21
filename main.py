@@ -449,8 +449,10 @@ def paint_poster():
     paint_pier()
     paint_frame()
     # The place name, set large across the sky, and its promise below it.
-    draw_text("NARVELL", W // 2, 62, 20, CREAM, 18,
-              shadow=DEEP, shadow_dx=5, shadow_dy=5)
+    # Bigger, more legible lettering: scale 22 with a wider gap and a
+    # deeper drop shadow so NARVELL reads clearly at a glance.
+    draw_text("NARVELL", W // 2, 56, 22, CREAM, 20,
+              shadow=DEEP, shadow_dx=6, shadow_dy=6)
     draw_text("THE FLOATING LANTERN MARKETS", W // 2, 228, 5, GOLD, 5,
               shadow=DEEP, shadow_dx=2, shadow_dy=2)
 
